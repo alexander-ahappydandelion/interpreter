@@ -227,4 +227,14 @@ public class InterpreterTest {
 
         assertEquals("3", result);
     }
+
+    @Test
+    public void interpreteFunctionWithEqualParameterAndFunctionNames() {
+        List<String> program = Arrays.asList("g(g)={(g+3)}",
+                "g(1)");
+
+        String result = interpret(program);
+
+        assertEquals("4", result);
+    }
 }
