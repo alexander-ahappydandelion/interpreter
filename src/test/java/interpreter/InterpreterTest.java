@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 import static interpreter.Interpreter.interpret;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
 
 public class InterpreterTest {
     @Test

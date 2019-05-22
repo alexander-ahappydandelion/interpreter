@@ -5,8 +5,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import tokens.Token;
 
-import org.apache.commons.lang3.RandomStringUtils;
-
 import java.util.List;
 
 import static org.junit.Assert.fail;
@@ -38,7 +36,7 @@ public class LexerTest {
 
     @Test
     public void tokenizeSingleIdentifierReturnsSingleElementList() {
-        String programmString = RandomStringUtils.randomAlphabetic(15);
+        String programmString = "_aGthkly23hg_7gdsD";
 
         try {
             List<Token> tokens = Lexer.tokenizeLine(programmString, 0);
@@ -50,7 +48,7 @@ public class LexerTest {
 
     @Test
     public void tokenizeSingleIdentifierReturnsCorrectTokenType() {
-        String programmString = RandomStringUtils.randomAlphabetic(15);
+        String programmString = "_aGthkly23hg_7gdsD";
 
         try {
             List<Token> tokens = Lexer.tokenizeLine(programmString, 0);
@@ -62,7 +60,7 @@ public class LexerTest {
 
     @Test
     public void tokenizeSingleIdentifierReturnsCorrectTokenValue() {
-        String programmString = RandomStringUtils.randomAlphabetic(15);
+        String programmString = "_aGthkly23hg_7gdsD";
 
         try {
             List<Token> tokens = Lexer.tokenizeLine(programmString, 0);
@@ -74,7 +72,7 @@ public class LexerTest {
 
     @Test
     public void tokenizeSingleNumberReturnsSingleElementList() {
-        String programmString = RandomStringUtils.randomNumeric(15);
+        String programmString = "_aGthkly23hg_7gdsD";
 
         try {
             List<Token> tokens = Lexer.tokenizeLine(programmString, 0);
@@ -86,7 +84,7 @@ public class LexerTest {
 
     @Test
     public void tokenizeSingleNumericReturnsCorrectTokenType() {
-        String programmString = RandomStringUtils.randomNumeric(15);
+        String programmString = "_aGthkly23hg_7gdsD";
 
         try {
             List<Token> tokens = Lexer.tokenizeLine(programmString, 0);
@@ -98,7 +96,7 @@ public class LexerTest {
 
     @Test
     public void tokenizeSingleNumberReturnsCorrectTokenValue() {
-        String programmString = RandomStringUtils.randomNumeric(15);
+        String programmString = "_aGthkly23hg_7gdsD";
 
         try {
             List<Token> tokens = Lexer.tokenizeLine(programmString, 0);
